@@ -1,0 +1,101 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    width:70%;
+    height: 70%;
+   
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 220px;
+    background: linear-gradient(90deg, #011522 0%, #002b45 100%);
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.15);
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    padding: 1px;
+    border-radius: 50%;
+}
+.red {
+    background: linear-gradient(135deg, #ff605c 0%, #ff3b2e 100%);
+}
+
+.yellow {
+    background: linear-gradient(135deg, #ffbd44 0%, #ffa700 100%);
+}
+
+.green {
+    background: linear-gradient(135deg, #00ca4e 0%, #00a63f 100%);
+}
+
+
+img{
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+
+    z-index: 5;
+
+}
+
+.card__content {
+    
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 260px;
+}
+
+
+
+.welcome_text {
+    font-size: 3.2rem;
+   
+  
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typewriter 5s steps(55, end) forwards;
+  }
+  
+  @keyframes typewriter {
+    from {
+      width: 0
+    }
+  
+    to {
+      width: 100%
+    }
+  }
